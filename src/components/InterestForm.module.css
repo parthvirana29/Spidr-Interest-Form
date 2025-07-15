@@ -1,0 +1,109 @@
+/* src/components/InterestForm.module.css */
+
+
+.formContainer {
+    background-color:  var(--spidr-green);
+    padding: 40px;
+    max-width: 550px;
+    width: 100%;
+    
+}
+
+.title {
+    font-weight: 250 !important;
+    margin: 0 !important;
+    font-size: 2.5em !important;
+    font-family: inherit;
+
+}
+.title::after{
+    content: "";
+    width: 300px;
+    display: block;
+    background: var(--spidr-white);
+    height: 2px;
+    margin: 15px auto 0;
+    line-height: 1.1;
+}
+.subtitle {
+    text-align: center;
+    margin-bottom: 40px;
+    color: var(--spidr-white);
+    font-size: 1rem;
+}
+
+.formRow {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+/* On larger screens, put first and last name side-by-side */
+@media (min-width: 500px) {
+    .formRow {
+        flex-direction: row;
+        gap: 20px;
+    }
+}
+
+.formGroup {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formGroup label {
+    margin-bottom: 8px;
+    font-size: 0.83rem;
+    font-weight: 500;
+    color: var(--spidr-white);
+
+   
+}
+
+.formGroup input {
+    background-color: var(--spidr-dark-bg);
+    border: 1px solid var();
+    border-radius: 6px;
+    padding: 12px 16px;
+    color: var(--spidr-light-text);
+    font-size: 1rem;
+    font-family: 'Inter', sans-serif;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.formGroup input::placeholder {
+    color: var(--spidr-dark-bg);
+}
+
+/* This is the key Spidr interaction style */
+.formGroup input:focus {
+    outline: none;
+    border-color: var(--spidr-green);
+    box-shadow: 0 0 0 3px rgba(227, 223, 223, 0.841);
+}
+
+.submitButton {
+        padding: 6px 12px;
+        font-size: 16px;
+        -webkit-font-smoothing: antialiased;
+        background-color: var(--spidr-dark-bg);
+        border-color: var(--spidr-white);
+        border-radius: 6px;
+        padding: 12px 16px;
+        color: var(--spidr-light-text);
+        font-size: 1rem;
+        font-family: 'Inter', sans-serif;
+}
+
+
+
+.submitButton:hover {
+    border-color: var(--spidr-green);
+    box-shadow: 0 0 0 3px rgba(227, 223, 223, 0.841);
+    transform: translateY(-2px);
+    background-color: #ebe1e1;
+    color:var(--spidr-green);
+    font-size: 1.05rem;
+     }

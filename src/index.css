@@ -1,0 +1,20 @@
+/* src/index.css */
+:root {
+  --spidr-green: #479dafe6;
+  --spidr-light-text: #EAEAEA;
+  --spidr-dark-bg: #333333;
+  --spidr-white: #ffff;
+}
+
+body {
+  margin: 0;
+  font-family: Raleway, sans-serif !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: var(--spidr-dark-bg);
+  color: var(--spidr-light-text);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
